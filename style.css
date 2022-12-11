@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;400;500;600;700&display=swap");
+
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    /* overflow-x: hidden; */
+    /* overflow-y:scroll; */
+    padding: 0;
+}
+
+body {
+    background: black !important;
+    /* overflow-y: hidden; */
+}
+
+#my_logo {
+    object-fit: contain;
+}
+
+.my_nav {
+    color: white;
+    /* background-color: white !important; */
+}
+
+.social>a {
+    padding: 0 0 0 10px;
+    text-decoration: none !important;
+}
+
+.menu_item {
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.vl {
+    border-left: 1px solid gray;
+    height: 20px;
+}
+
+.menu_item:hover {
+    color: #f36100 !important;
+}
+
+.menu_item::after {
+    color: #f36100 !important;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 10rem;
+}
+
+.my_header {
+    margin-top: 2.5rem;
+}
+
+.breadcrumb-service:li>a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.bg {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.back-img {
+    background-image: url(./Images/breadcrumb-bg.jpg);
+    height: 500px;
+    background-position: top center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+
+}
+
+.main_bredcrumb {
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.page_name {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    margin-bottom: -11%;
+    text-align: center;
+}
+
+.page_name>p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* margin-top: 10%; */
+    font-size: 55px;
+}
+
+.we-do {
+    margin-top: 5rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.Heading-sec>h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    color: #f36100;
+    text-transform: uppercase;
+}
+
+.Heading-sec>h1 {
+    font-family: "Oswald", sans-serif;
+    color: #f36100;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.features {
+    margin-top: 2.25rem !important;
+    background-color: #151515;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#our_service {
+    /* width: 1100px; */
+}
+
+.services_text {
+    background: #252525;
+    padding: 72px 30px !important;
+    height: 293px;
+    /* color: white; */
+}
+
+.services_text h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    /* margin-top: 20px; */
+}
+
+.services_text p {
+    color: gray;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.services_text a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.service_img {
+    padding: 0;
+    margin: 0 !important;
+}
+
+.services_text::after {
+    color: gray;
+}
+
+.top-icons {
+    text-align: right;
+    padding: 9px 0;
+    display: inline-flex;
+
+}
+
+#seprator {
+    position: relative;
+    padding-left: 10px;
+}
+
+/* reach us and footer section */
+
+.reach {
+    display: flex;
+    color: white;
+    font-size: 16px;
+    justify-content: space-around;
+    justify-items: center;
+    flex-direction: row;
+}
+
+.reach-us {
+    width: 32%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-text {
+    padding: 15px;
+    width: 94%;
+}
+
+.location-icon {
+    padding-right: 15px;
+}
+
+.contact-no {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.reach-section {
+    background: #0a0a0a;
+    margin-top: 4rem;
+}
+
+/* Footer section starts here */
+
+.conseptwentyone {
+    margin: 0 auto;
+    --bs-gutter-x: 0;
+}
+
+.my-footer {
+    font-family: 'Oswald', sans-serif;
+    padding-top: 5em;
+    display: block;
+    background: #0a0a0a;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.heddingtwenty {
+    font-family: "Oswald", sans-serif;
+}
+
+.heddingtwentyfor {
+    font-size: 14px;
+    color: #c4c4c4;
+    padding-top: 2px;
+    margin: 0 !important;
+}
+
+.concepttwenty3 {
+    width: fit-content;
+}
+
+.hedding1 {
+    margin-top: 20px;
+    padding-right: 4rem;
+}
+
+.comments-quote {
+    font-size: 10px;
+    display: inline-block;
+    padding: 3px;
+}
+
+.c-quote {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.copyright {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    color: #c4c4c4;
+}
+
+hr {
+    color: rgba(196, 196, 196, 0.7);
+}

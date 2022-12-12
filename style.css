@@ -40,7 +40,7 @@ body {
 }
 
 .menu_item:hover {
-    color: #f36100 !important;
+    color: rgb(243, 97, 0) !important;
 }
 
 .menu_item::after {
@@ -52,6 +52,10 @@ body {
     justify-content: center;
     align-self: center;
     margin-left: 10rem;
+}
+
+.btn-bg-gradient {
+    background-image: linear-gradient(90deg, rgba(243, 97, 0, 1), rgba(255, 252, 252, 1));
 }
 
 .my_header {
@@ -111,6 +115,7 @@ body {
 
 .Heading-sec {
     padding-top: 5rem;
+    margin-bottom: 40px;
 }
 
 .Heading-sec>h3 {
@@ -177,21 +182,23 @@ body {
     color: #f36100;
     text-decoration: none;
 }
+
 .services_text:hover p {
-    color: white;
+    /* color: white; */
     text-decoration: none;
     letter-spacing: 1px;
 }
 
 .services_text:hover {
     background-color: #4b4b4b;
-    transition: all 0.3s;
+    transition: all 0.2s;
     transform: scale(1.01);
 
 }
-.services_text::after{
+
+.services_text::after {
     position: absolute;
-    background-color: #f36100;
+    background-color: #707070;
     content: "";
     transform: rotate(45deg);
     width: 20px;
@@ -200,7 +207,10 @@ body {
     left: -10px;
     z-index: -1;
 }
-
+.services_text.next-row::after{
+    left: auto;
+    right: -10px;
+}
 .service_img {
     /* min-width: 100%;
     height: 100%; */
@@ -208,9 +218,71 @@ body {
     margin: 0 !important;
 }
 
+.service_img:hover {
+    transform: scale(1.03);
+    /* transition: ease-in 0.5s; */
+}
+
 .services_text::after {
     color: gray;
 }
+
+/* appointment banner section starts here */
+.registration {
+    background-image: url("./Images/banner-bg.jpg");
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin-top: 95px;
+}
+
+.registration h2 {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center important;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.registration p {
+    font-size: 20px;
+    color: #c4c4c4;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: "Muli", sans-serif;
+}
+
+.text-item {
+    text-align: center;
+}
+
+.primary-btn {
+    display: inline-block;
+    font-size: 18px;
+    padding: 17px 30px 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+.contentvalue .primary-btn {
+    background: transparent;
+    /* border: 2px solid #f36100; */
+}
+
+.contentvalue {
+    text-transform: uppercase;
+}
+
+/* --------------------------------------- */
 
 .top-icons {
     text-align: right;
@@ -222,6 +294,65 @@ body {
 #seprator {
     position: relative;
     padding-left: 10px;
+}
+
+/* pricing section  */
+.pricing-items {
+    text-align: center;
+    padding: 40px 30px 52px;
+    border: 1px solid #464646;
+    transition: all 0.5s;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.pricing-items ul {
+    list-style: none;
+}
+
+.pricing-items ul li {
+    font-size: 14px;
+    color: #c4c4c4;
+    line-height: 32px;
+    list-style: none;
+}
+.pricing-items>div li {
+    font-size: 14px;
+    color: #c4c4c4;
+    line-height: 32px;
+    list-style: none;
+    letter-spacing: 0.6px;
+}
+
+.pricing-items h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.pricing-items .pricing-bx-price {
+    margin-bottom: 28px;
+}
+
+.pricing-items .pricing-bx-price h1 {
+    font-size: 60px;
+    color: #f36100;
+    font-weight: 600;
+}
+
+.pricing-items .pricing-bx-price span {
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.pricing-items .pricing-bx-price span {
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* reach us and footer section */
@@ -320,4 +451,20 @@ body {
 
 hr {
     color: rgba(196, 196, 196, 0.7);
+}
+
+/* media queries section  */
+
+@media (min-width:320px) and (max-width:768px) {
+    .registration {
+        background-image: url("./Images/banner-bg.jpg");
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+
+    }
 }
